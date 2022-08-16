@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*--------------------Scroll-------------------*/
+h1{
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+
+::-webkit-scrollbar{
+    width: 12px;
+    border: 5px solid white;
+    background-color: rgb(150,160,150);
+}
+
+::-webkit-scrollbar-thumb{
+    width: 12px;
+    border-radius: 50px;
+    border: 2px solid white;
+    background-color: crimson;
+}
+
+
+/*---------------------*/
+
+.icon-whatsapp{
+    position: fixed;
+    top: 83%;
+    left: 93%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+
+}
+
+.nav_bar{
+    background:crimson;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*
+    box-shadow: 0px 10px 20px rgb(168, 165, 165);*/
+}
+
+.logo a{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.menu li{
+    margin-right: 3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    color: rgb(230, 221, 221);
+}
+
+
+#menu-list-1{
+    color: #fff; 
+
+}
+
+.menu li .underline{
+    width: 45px;
+    height: 2px;
+    background-color: #fff;
+}
+
+/*
+.menu li .underline-secondary{
+    width: 45px;
+    height: 1px;
+}
+.menu li .underline-secondary:hover{
+    background-color: #fff;
+}
+*/
+
+.menu li a{
+    color: rgb(230, 221, 221);
+    transition: all 0.25s ease-in-out;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+}
+.menu li:hover, .menu li a:hover{
+   color: #fff;
+   border-color: #fff;
+}
+
+/*Navbar FIM*/
+
+
+.container-bloco{
+    height: 100vh;
+}
+
+#home{
+    background-image: url(../img/baner.jpg);
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home span strong{
+    font-weight: bold;
+    font-size: 60px;
+    color:#fff;
+    background-color: rgba(63, 10, 10, 0.7);
+    border-radius: 10px;
+}
+
+/*-----------------------*/
+
+#sobre{
+    height: 100vh;
+    padding-top: 70px;
+    width: 100%;
+}
+
+
+
+.sobre-title{
+    font-weight: bold;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+.sobre-foto img{
+
+    border-radius: 5px;
+}
+.sobre-descricao{
+    transition: 0.5s;
+}
+
+.sobre-descricao h2{
+    font-size: 24px;
+    color: rgb(43, 41, 41);
+}
+
+.sobre-descricao p{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 30px;
+   
+}
+
+/*----------------------------------------*/
+
+#servicos{
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.servicos-title{
+    font-weight: bold;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+.card{
+    border: none;
+
+}
+
+.card img{
+    transition: 0.5s;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+
+.card-description{
+    background-color: crimson;
+    height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+
+/*-------------------------------------------*/
+
+.servicos-details{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.servicos-details summary{
+    color: crimson;
+    font-size: 20px;
+    font-weight: 600;
+}
+.servicos-details summary::marker{
+
+    color: rgb(63, 62, 62);
+}
+.servicos-details details{
+    border-bottom: 1px solid #111;
+}
+
+
+.garantimos-img{
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.garantimos-img-card{
+    
+}
+
+.card-garantimos{
+    border: 3px solid crimson;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-left: 25px;
+} 
+
+.garantimos-text{
+    margin-left: 30px;
+    color: rgb(102, 96, 96);
+    font-size: 18px;
+}
+
+.garantimos-text-last{
+    margin-right: 80px;
+    color: rgb(102, 96, 96);
+    font-size: 18px;
+}
+
+
+/*---------------------------FIM SERVIÇOS-------------------------------*/
+
+#contacto{
+    margin-top: 1000px;
+    background-color: #222;
+
+}
+.localizacao{
+    margin-left: 100%;
+}
+
+textarea{
+    resize: none;
+}
+
+.form-buttom{
+    background: crimson;
+    border-color: crimson;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none !important;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-buttom:hover{
+    color: #fff;
+    background-color: rgb(194, 18, 53);
+}
+
+
+
+.localizacao-local{
+    margin-bottom: 5px;
+    color: rgb(221, 215, 215);
+}
+
+.form-group-1-contactos-contact{
+    color: rgb(221, 215, 215);
+}
+
+.from-group-1-social{
+    margin-top: 100px;
+    margin-left: 130px;
+}
+
+.docial-icon{
+    cursor: pointer;
+    color: #fff;
+}
+.docial-icon:hover{
+    color: crimson;
+}
+
+.divisao{
+    background-color: #fff;
+    height: 1px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(105, 98, 98);
+}
+
+
+/*---------------------------------------------------------*/
+
+/*====================EFEITO APARECER=================*/
+
+.esquerda{
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.direita{
+    transform: translateX(50%) ;
+    opacity: 0;
+}
+
+.baixo{
+    transform: translateY(50%);
+    opacity: 0;
+}
+
+
+.efeitoScroll{
+    opacity: 1 !important;
+    transform: translate(0,0) !important;
+    transition: all 1.5s ease-in-out;
+}
+
+
+/*====================EFEITO APARECER=================*/
